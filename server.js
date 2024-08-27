@@ -58,7 +58,7 @@ app.get("/", (req, res) => {
 
 // Iniciar servidor
 const PORT = process.env.PORT || 8080; // Corregido error tipográfico
-const server = app.listen(PORT, 'localhost', function () {
+const server = app.listen(PORT, '0.0.0.0', function () {
   let host = 'localhost';
   let port = server.address().port;
   console.log("App listening at http://%s:%s", host, port);
